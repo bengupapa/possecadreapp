@@ -1,0 +1,69 @@
+﻿
+@import url('font-awesome.css');
+
+/*Corporate colors and font*/
+.green {
+    color:rgba(31,145,9,243)
+}
+.Red {
+    color:rgba(255,33,75,255)
+}
+.blue {
+    color:rgba(0,0,58,255)
+}
+.transparent {
+    background-color:transparent
+}
+.Captionfont {
+    font-family:Batang;
+    font-weight:bold;
+}
+.Textfont {
+    font-family:Arial
+}
+.point {
+    cursor:pointer
+}
+/*Elements style*/
+body {
+    background-color:white !important
+}
+.headerwrapper {
+    background-image: url('../Resources/Overcast-sky.jpg');
+    background-size:100%;
+    height:100vh;
+    margin:0px;
+    bottom:0px;
+    top:0px;
+    width:100%
+}
+.navigationBar {
+     height:10%;
+     width:100%;
+}
+.sec {
+    height:100%
+}
+.navmenu li {
+  float:right
+}
+.navmenu li {
+    display:inline-block;
+    padding:10px;
+}
+.menuItem div{
+     color:rgba(0,0,58,255);
+     font-family:Batang;
+    font-weight:bold;
+}
+.menuItem div:hover{
+     color:rgba(255,33,75,255);
+     
+}
+#scroll {
+    color:rgba(0,0,58,255)
+}
+#scroll:hover {
+    color:rgba(255,33,75,255);
+   
+}
