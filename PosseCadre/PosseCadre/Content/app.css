@@ -2,68 +2,215 @@
 @import url('font-awesome.css');
 
 /*Corporate colors and font*/
+
 .green {
-    color:rgba(31,145,9,243)
+    color: rgba(31,145,9,243);
 }
-.Red {
-    color:rgba(255,33,75,255)
+
+.red {
+    color: rgba(255,33,75,255);
 }
+
 .blue {
-    color:rgba(0,0,58,255)
+    color: rgba(0,0,58,255);
+    transition: ease 1s;
 }
+
+.tblue {
+    background-color: rgba(0,0,58,255);
+    color: rgba(0,0,58,255);
+    transition: ease 1s;
+}
+
+.tgray {
+    color: lightgray;
+    transition: ease 1s;
+}
+
+.tred {
+    background-color: rgba(255,33,75,255);
+    transition: ease 1s;
+}
+
 .transparent {
-    background-color:transparent
+    background-color: transparent;
+    /*transition:ease 1s*/
 }
+
 .Captionfont {
-    font-family:Batang;
-    font-weight:bold;
+    font-family: Batang;
+    font-weight: bold;
 }
+
 .Textfont {
-    font-family:Arial
+    color: rgba(0,0,58,255);
+    font-family: Arial;
+    font-weight: bold;
 }
+
 .point {
-    cursor:pointer
+    cursor: pointer;
 }
 /*Elements style*/
 body {
-    background-color:white !important
+    background-color:lightgray !important; /* ;*/
 }
-.headerwrapper {
+
+#headerwrapper {
     background-image: url('../Resources/Overcast-sky.jpg');
-    background-size:100%;
-    height:100vh;
-    margin:0px;
-    bottom:0px;
-    top:0px;
-    width:100%
+    background-size: 100%;
+    height: 100vh;
+    margin: 0px;
+    bottom: 0px;
+    top: 0px;
+    width: 100%;
 }
+
 .navigationBar {
-     height:10%;
-     width:100%;
+    height: 10%;
+    width: 100%;
+    /*position:fixed !important;*/
 }
+
+.navigationBarColor {
+    background-color: rgba(31,145,9,243);
+}
+
+.sectionNav {
+    position: fixed !important;
+    height: 85px;
+    z-index: 2;
+}
+
+.sectionNavDisplay {
+    background-color: rgba(31,145,9,243);
+    transition: ease 1s;
+}
+
 .sec {
-    height:100%
+    height: 100%;
 }
+
 .navmenu li {
-  float:right
+    float: right;
 }
+
 .navmenu li {
-    display:inline-block;
-    padding:10px;
+    display: inline-block;
 }
-.menuItem div{
-     color:rgba(0,0,58,255);
-     font-family:Batang;
-    font-weight:bold;
+
+.menuItem div {
+    color: rgba(0,0,58,255);
+    font-family: Arial;
+    font-weight: bold;
 }
-.menuItem div:hover{
-     color:rgba(255,33,75,255);
-     
+
+.divli:hover {
+    color: lightgray;
+    border-bottom: 5px solid lightgray;
 }
+.mdivli:hover {
+    color: lightgray;
+}
+
 #scroll {
-    color:rgba(0,0,58,255)
+    color: rgba(0,0,58,255);
 }
+
 #scroll:hover {
-    color:rgba(255,33,75,255);
-   
+    color: lightgray;
+}
+
+.divli {
+    padding: 20px;
+    font-size: 14px;
+}
+
+.seccontainor {
+    padding-top: 80px;
+}
+
+.fa-chevron-up {
+    color: darkgray !important;
+}
+
+.secwrapper {
+    height: 100vh;
+    /*background-color: ghostwhite !important;*/
+}
+
+.activeclass div {
+    
+    display:inline-block;
+    transition-delay:5s;
+    transition: ease;
+}
+
+.inactiveclass div {
+    
+    display:none;
+    transition-delay:5s;
+    transition: ease;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 767px) {
+
+    .navmenu, #headerwrapper, .desk {
+        display: none !important;
+    }
+
+    .navmenuicon {
+        margin-top: 10px;
+        display: inline-block !important;
+        float: right;
+        cursor:pointer;
+        color: rgba(0,0,58,255);
+    }
+
+    .navmenuicon:hover {
+        color:lightgray;
+        
+    }
+
+    .mobi {
+        display: inline-block;
+    }
+
+    #secNav {
+        background-color: rgba(255,33,75,255);
+        width: 100%;
+    }
+
+    #cadre {
+        color: lightgray;
+    }
+    #sidemenuwrapper {
+        height:190px;
+        background-color: rgba(255,33,75,255);
+        padding-top:85px;
+        position:fixed;
+        width:100%;
+        z-index:1;
+        display:none
+    }
+}
+
+@media (min-width: 768px) {
+    .navmenuicon, .mobi, #sidemenuwrapper {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    #headerwrapper {
+        background-size: initial;
+    }
+
+    #scroll:hover {
+        color: darkgray;
+    }
 }

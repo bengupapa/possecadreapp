@@ -3,21 +3,154 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     <link href="~/Content/app.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <link href="~/Content/css/animate.css" rel="stylesheet" />
+    <link href="~/Content/css/nivo-lightbox.css" rel="stylesheet" />
+    <link href="~/Content/css/nivo-theme.css" rel="stylesheet" />
+    <link href="~/Content/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Content/css/owl.theme.css" rel="stylesheet" />
+
 </head>
 
 <body>
-   
 
-    @RenderBody();
+    <div id="mainbodywrapper">
+        <section id="secNav" class="col-sm-12 sectionNav">
+            <div class="container  sec">
+                <div class="row sec transparent">
+                    <div class="col-xs-5" style="overflow-x:hidden;overflow-y:hidden">
+                        @Html.Partial("~/Views/Home/_logo.cshtml")
+                        <h2 class="blue Captionfont point home mobi"><span id="cadre" class="red">C</span></h2>
+                    </div>
+                    <div class="col-xs-7" style="height:inherit;">
+                        <div class="row" style="height:20%;"></div>
+                        <div class="row" style="height:50%">
+                            <ol class="navmenu">
+
+                                <li class="navhome menuItem point"><div id="_contacts" class="divli ">Chat to us</div></li>
+                                
+                                <!--Get added after header is dismissed-->
+                                <li class="navmain menuItem point"><div  class="divli " onclick="work()">Our work</div></li>
+                                <li class="navmain menuItem point"><div  class="divli " onclick="expertise()">Our expertise</div></li>
+
+                                <!--Displayed on header-->
+                                
+                                <li class="navhome menuItem point"><div id="_services" class="divli ">Our services</div></li>
+                                <li class="navhome menuItem point"><div id="_aboutus" class="divli ">Who are we?</div></li>
+
+                            </ol>
+      
+                            <span class="navmenuicon fa fa-list fa-2x"></span>
+                        </div>
+                        <div class="row" style="height:30%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="sidemenuwrapper">
+            <div class="col-xs-12">
+                <div class="container">
+
+                    <div>
+                        <p id="" class="onabout point mdivli Textfont">Who we are</p>
+                    </div>
+
+                    <div>
+                        <p id="" class="onservices point mdivli Textfont">Our services</p>
+                    </div>
+
+                    <div>
+                        <p id="" class="oncontact point mdivli Textfont">Chat to us</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <header id="headerwrapper">
+            <div style="height:85%; padding-top:90px">
+                <div style="height:100%; width:100%">
+                    
+                    <div class="col-sm-12" style="height:inherit">
+                        <div class="row" style=" height:10%"></div>
+                        <div class="row" style=" height:80%; padding:5px">
+
+                                <div class="" style="align-content:center; text-align:center;">
+                                    <div id="owl-cont" class="testemonials  fadeInUp  data-wow-offset=" 10" >
+
+
+                                        <!-- begin single testemonial item -->
+                                        <div>
+                                            <p style="visibility:hidden">Papa</p>
+                                        </div>
+                                        <!-- end single testemonial item -->
+
+                                        <!-- begin single testemonial item -->
+                                        <div style="padding-left:5px;padding-right:15px">
+                                            @Html.Partial("~/Views/Home/_contactus.cshtml")
+                                        </div>
+                                        <!-- end single testemonial item -->
+
+                                        <!-- begin single testemonial item -->
+                                        <div style="padding-left:5px;padding-right:15px">
+                                            @Html.Partial("~/Views/Home/_aboutus.cshtml")
+                                        </div>
+                                        <!-- end single testemonial item -->
+
+                                        <!-- begin single testemonial item -->
+                                        <div style="padding-left:5px;padding-right:15px">
+                                            @Html.Partial("~/Views/Home/_ourservices.cshtml")
+                                        </div>
+                                        <!-- end single testemonial item -->
+
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="row" style=" height:10%"></div>
+                    </div>
+                 
+                </div>
+            </div>
+            <div style=" height:15%;bottom:0px;margin-bottom:0px;">
+                <div class="col-xs-5"></div>
+                <div id="scroll" class="col-xs-2" style="text-align:center">
+                    
+                    <div class=" point" style="height:60%; ">
+                        <span id="scrollicon" class="fa fa-chevron-down fa-4x " style="padding-left:5px"></span>
+                    </div>
+
+                    <div class=" point" style="height:40%; ">
+                        <span id="scrolltext" style="padding-left:5px"><b>find out more</b></span>
+                    </div>
+                 
+                </div>
+                <div class="col-xs-5"></div>
+            </div>
+        </header>
+
+
+        @RenderBody();
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
     <script src="~/Scripts/app.js"></script>
     <script src="~/Scripts/jquery-scrollto.js"></script>
+
+    <script src="~/Scripts/script/jquery.nav.js"></script>
+    <script src="~/Scripts/script/main-index-slider.js"></script>
+    <script src="~/Scripts/script/main.js"></script>
+    <script src="~/Scripts/script/nivo-lightbox.min.js"></script>
+    <script src="~/Scripts/script/owl.carousel.min.js"></script>
+    <script src="~/Scripts/script/wow.min.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<style type="text/css">
+    .c {
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+
+    .a, .b {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .b {
+        z-index: 10;
+        background-color: blue;
+        color:white;
+        text-align:center;
+        height:inherit
+      
+        
+        
+    }
+
+    .a {
+        background-color: orange;
+    }
+</style>
+
+<div class="c">
+    <div class="a">
+        asffas
+    </div>
+    <div class="b">
+       <span style="margin-top:50px">Bengu Papa</span>
+    </div>
+</div>
+
+

@@ -12,5 +12,9 @@ namespace PosseCadre.Controllers
         {
             return View();
         }
+
+        public ActionResult Test() {
+            return View();
+        }
     }
 }

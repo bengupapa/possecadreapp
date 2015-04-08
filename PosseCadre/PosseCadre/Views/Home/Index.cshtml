@@ -1,51 +1,51 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "PosseCadre";
 }
 
-<header class="headerwrapper">
-    <div class="col-sm-12 navigationBar">
-        <div class="container  sec">
-            <div class="row sec transparent">
-                <div class="col-sm-4" style="overflow-x:hidden;overflow-y:hidden">
-                    <h2 class="blue Captionfont point">Posse<span class="Red">Cadre</span></h2>
-                </div>
-                <div class="col-sm-8" style="height:inherit;">
-                    <div class="row" style="height:20%;">
-                       
-                    </div>
-                    <div class="row" style="height:50%">
-                        <ul class="navmenu">
-                            <li class="menuItem point"><div>LOREM</div></li>
-                            <li class="menuItem point"><div>LOREM</div></li>
-                            <li class="menuItem point"><div>LOREM</div></li>
-                        </ul>
-                    </div>
-                    <div class="row" style="height:30%"></div>
-                </div>
-            </div>
-           
 
+<!--ABOUT US SECTION-->
+<section id="about" class="container secwrapper">
+    <div class="row">
+        <div class="col-sm-12 seccontainor">
+            @Html.Partial("~/Views/Home/_aboutsection.cshtml")
         </div>
     </div>
-    <div style="height:75%;">
-
-    </div>
-    <div style=" height:15%;bottom:0px;margin-bottom:0px;">
-        <div class="col-xs-5"></div>
-        <div id="scroll" class="col-xs-2" style="text-align:center">
-            <div>
-                <div class="row point" style="height:60%">
-                    <span class="fa fa-chevron-down fa-5x "></span>
-                </div>
-                <div class="row point" style="height:40%">
-                    <p class="Textfont"><b>it all begins here</b></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-5"></div>
-    </div>
-</header>
-
-<section id="about" class="container" style="background-color:lightgray;height:100vh">
-
 </section>
+
+<!--SERVICES SECTION-->
+<section id="services" class="container secwrapper">
+    <div class="row">
+        <div class="col-sm-12 seccontainor">
+            @Html.Partial("~/Views/Home/_servicessection.cshtml")
+        </div>
+    </div>
+</section>
+
+<!--OUR EXPERTISE SECTION-->
+<section id="expertise" class="container secwrapper">
+    <div class="row">
+        <div class="col-sm-12 seccontainor">
+            @Html.Partial("~/Views/Home/_expertisesection.cshtml")
+        </div>
+    </div>
+</section>
+
+
+<!--OUR WORK SECTION-->
+<section id="work" class="container secwrapper">
+    <div class="row">
+        <div class="col-sm-12 seccontainor">
+            @Html.Partial("~/Views/Home/_worksection.cshtml")
+        </div>
+    </div>
+</section>
+
+<!--CONTACT U SECTION-->
+<section id="contacts" class="container secwrapper">
+    <div class="row">
+        <div class="col-sm-12 seccontainor">
+            @Html.Partial("~/Views/Home/_contactssection.cshtml")
+        </div>
+    </div>
+</section>
+

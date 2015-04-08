@@ -1,0 +1,82 @@
+.nav-tabs>li>a:hover {
+	background-color: #3fbb9a;
+	border-color: #3fbb9a;
+}
+
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:hover, 
+.nav-tabs>li.active>a:focus {
+    background-color: #339379;
+    border: 1px solid #339379;
+}
+
+.btn-custom {
+    border-color: #3fbb9a;
+    background-color: #3fbb9a;
+}
+
+.btn-custom-border {
+    background: transparent;
+    border-color: #3fbb9a;
+    color: #3fbb9a;
+}
+.intro .btn-custom-border {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.features .feature .icon-container .icon {
+    border: 1px solid #3fbb9a;
+}
+    
+.btn-send,
+.newsletter input {
+    border: 1px solid #ffffff;
+}
+
+.btn-send:hover,
+.btn-send:active,
+.btn-custom:hover,
+.btn-custom-border:hover,
+.btn-slide:hover,
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus,
+.navbar-toggle {
+    background-color: #339379;
+    border-color: #339379;
+}
+
+.btn-slide,
+.features .feature:hover .icon-container .icon,
+.footer span.jobs {
+    background-color: #3fbb9a;
+}
+
+
+.underline {
+	border-top: 4px solid #3fbb9a;
+}
+
+.underline-small {
+    border-top: 2px solid #3fbb9a;
+}
+
+
+.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-nav>li.current a,
+.features .feature .icon-container .icon,
+.service i,
+.service:hover h4,
+.screens .screen .hover-screen i:hover,
+.packages .package.featured .package-name,
+ul.extra-features i,
+.footer a:hover,
+.footer i:hover {
+    color: #3fbb9a;
+}
+
+.footer span.jobs:after {
+	border-right-color: #3fbb9a;
+}
