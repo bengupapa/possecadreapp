@@ -4,16 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
-    <link href="~/Content/app.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
-    <link href="~/Content/css/animate.css" rel="stylesheet" />
-    <link href="~/Content/css/nivo-lightbox.css" rel="stylesheet" />
-    <link href="~/Content/css/nivo-theme.css" rel="stylesheet" />
-    <link href="~/Content/css/owl.carousel.css" rel="stylesheet" />
-    <link href="~/Content/css/owl.theme.css" rel="stylesheet" />
-
+    <link href="~/Content/app.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,11 +16,11 @@
         <section id="secNav" class="col-sm-12 sectionNav">
             <div class="container  sec">
                 <div class="row sec transparent">
-                    <div class="col-xs-5" style="overflow-x:hidden;overflow-y:hidden">
+                    <div class="col-xs-4" style="overflow-x:hidden;overflow-y:hidden">
                         @Html.Partial("~/Views/Home/_logo.cshtml")
                         <h2 class="blue Captionfont point home mobi"><span id="cadre" class="red">C</span></h2>
                     </div>
-                    <div class="col-xs-7" style="height:inherit;">
+                    <div class="col-xs-8" style="height:inherit;">
                         <div class="row" style="height:20%;"></div>
                         <div class="row" style="height:50%">
                             <ol class="navmenu">
@@ -82,32 +76,32 @@
                         <div class="row" style=" height:80%; padding:5px">
 
                                 <div class="" style="align-content:center; text-align:center;">
-                                    <div id="owl-cont" class="testemonials  fadeInUp  data-wow-offset=" 10" >
+                                    <div id="owl-cont" class="aboutussummary  fadeInUp  data-wow-offset=" 10" >
 
 
-                                        <!-- begin single testemonial item -->
+                                        <!-- begin single item -->
                                         <div>
                                             <p style="visibility:hidden">Papa</p>
                                         </div>
-                                        <!-- end single testemonial item -->
+                                        <!-- end single item -->
 
-                                        <!-- begin single testemonial item -->
+                                        <!-- begin single item -->
                                         <div style="padding-left:5px;padding-right:15px">
                                             @Html.Partial("~/Views/Home/_contactus.cshtml")
                                         </div>
-                                        <!-- end single testemonial item -->
+                                        <!-- end single item -->
 
-                                        <!-- begin single testemonial item -->
+                                        <!-- begin single item -->
                                         <div style="padding-left:5px;padding-right:15px">
                                             @Html.Partial("~/Views/Home/_aboutus.cshtml")
                                         </div>
-                                        <!-- end single testemonial item -->
+                                        <!-- end single item -->
 
-                                        <!-- begin single testemonial item -->
+                                        <!-- begin single item -->
                                         <div style="padding-left:5px;padding-right:15px">
                                             @Html.Partial("~/Views/Home/_ourservices.cshtml")
                                         </div>
-                                        <!-- end single testemonial item -->
+                                        <!-- end single  item -->
 
                                     </div>
                                 </div>
@@ -144,13 +138,9 @@
     @RenderSection("scripts", required: false)
     <script src="~/Scripts/app.js"></script>
     <script src="~/Scripts/jquery-scrollto.js"></script>
-
-    <script src="~/Scripts/script/jquery.nav.js"></script>
     <script src="~/Scripts/script/main-index-slider.js"></script>
-    <script src="~/Scripts/script/main.js"></script>
     <script src="~/Scripts/script/nivo-lightbox.min.js"></script>
     <script src="~/Scripts/script/owl.carousel.min.js"></script>
-    <script src="~/Scripts/script/wow.min.js"></script>
 
 </body>
 </html>

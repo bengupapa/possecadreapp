@@ -1,0 +1,110 @@
+﻿/*#region LARGE DIVICES */
+
+/*Larger screens*/
+@media only screen and (min-width : 1824px) {
+}
+
+/*Large screens*/
+@media only screen and (max-width: 1024px) and (max-height: 768px) {
+}
+
+/*#endregion */
+
+/*#region MEDIUM DEVICES */
+
+/*Desktop command laptops support*/
+@media only screen and (min-width : 1224px) {
+}
+
+/*#endregion */
+
+/*#region TABLETS */
+
+/*Tablets =>*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+}
+
+/*Tablets => landscape*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+}
+
+/*Tablets => Portrait*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+}
+
+/*#endregion */
+
+/*#region SMALL DEVICES */
+
+/*Phone*/
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+}
+
+/*Phone => landscape*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+}
+
+
+/*#endregion */
+
+/*#region CUSTOM MEDIA QUERIES */
+
+@media (max-width: 767px) {
+
+    .navmenu, #headerwrapper, .desk {
+        display: none !important;
+    }
+
+    .navmenuicon {
+        margin-top: 10px;
+        display: inline-block !important;
+        float: right;
+        cursor: pointer;
+        color: rgba(0,0,58,255);
+    }
+
+        .navmenuicon:hover {
+            color: lightgray;
+        }
+
+    .mobi {
+        display: inline-block;
+    }
+
+    #secNav {
+        background-color: rgba(255,33,75,255);
+        width: 100%;
+    }
+
+    #cadre {
+        color: lightgray;
+    }
+
+    #sidemenuwrapper {
+        height: 190px;
+        background-color: rgba(255,33,75,255);
+        padding-top: 85px;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .navmenuicon, .mobi, #sidemenuwrapper {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    #headerwrapper {
+        background-size: initial;
+    }
+
+    #scroll:hover {
+        color: darkgray;
+    }
+}
+
+/*#endregion */

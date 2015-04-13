@@ -1,5 +1,8 @@
 ﻿/// <reference path="jquery-1.10.2.min.js" />
 /// <reference path="jquery-scrollto.js" />
+/// <reference path="script/main-index-slider.js" />
+/// <reference path="script/nivo-lightbox.min.js" />
+/// <reference path="script/owl.carousel.min.js" />
 
 
 $(function () {
@@ -41,7 +44,7 @@ $(function () {
     };
 
 
-    $(".testemonials").owlCarousel({
+    $(".aboutussummary").owlCarousel({
         autoPlay: false,
         autoHeight: true,
         singleItem: true,
@@ -51,6 +54,18 @@ $(function () {
         itemsTablet: [600, 1],
         itemsMobile: false,
         pagination: false
+    });
+
+    $(".aboutPosseCadre").owlCarousel({
+        autoPlay: true,
+        autoHeight: true,
+        singleItem: true,
+        navigation: false,
+        itemsDesktop: [1000, 1],
+        itemsDesktopSmall: [900, 1],
+        itemsTablet: [600, 1],
+        itemsMobile: false,
+        pagination: true
     });
 
     $('#_contacts').addClass('slideInContacts');

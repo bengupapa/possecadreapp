@@ -1,8 +1,26 @@
 ﻿
+/*#region Imported stylesheets */
+
+/*External styles*/
 @import url('font-awesome.css');
+@import url('devicesupport.css');
+@import url('css/animate.css');
+@import url('css/nivo-lightbox.css');
+@import url('css/nivo-theme.css');
+@import url('css/owl.carousel.css');
+@import url('css/owl.theme.css');
+@import url('headerstyle.css');
+
+/*Sections stylesheets*/
+@import url('sectionscss/aboutusstyle.css');
+@import url('sectionscss/servcicesstyle.css');
+
+/*#endregion */
+
+/*#region Layout styles */
+
 
 /*Corporate colors and font*/
-
 .green {
     color: rgba(31,145,9,243);
 }
@@ -34,7 +52,7 @@
 
 .transparent {
     background-color: transparent;
-    /*transition:ease 1s*/
+    transition: ease 1s;
 }
 
 .Captionfont {
@@ -53,7 +71,7 @@
 }
 /*Elements style*/
 body {
-    background-color:lightgray !important; /* ;*/
+    background-color: lightgray !important; /* ;*/
 }
 
 #headerwrapper {
@@ -78,7 +96,7 @@ body {
 
 .sectionNav {
     position: fixed !important;
-    height: 85px;
+    height: 80px;
     z-index: 2;
 }
 
@@ -109,6 +127,7 @@ body {
     color: lightgray;
     border-bottom: 5px solid lightgray;
 }
+
 .mdivli:hover {
     color: lightgray;
 }
@@ -117,9 +136,9 @@ body {
     color: rgba(0,0,58,255);
 }
 
-#scroll:hover {
-    color: lightgray;
-}
+    #scroll:hover {
+        color: lightgray;
+    }
 
 .divli {
     padding: 20px;
@@ -140,77 +159,16 @@ body {
 }
 
 .activeclass div {
-    
-    display:inline-block;
-    transition-delay:5s;
+    display: inline-block;
+    transition-delay: 5s;
     transition: ease;
 }
 
 .inactiveclass div {
-    
-    display:none;
-    transition-delay:5s;
+    display: none;
+    transition-delay: 5s;
     transition: ease;
 }
 
+/*#endregion */
 
-
-/*MEDIA QUERIES*/
-
-@media (max-width: 767px) {
-
-    .navmenu, #headerwrapper, .desk {
-        display: none !important;
-    }
-
-    .navmenuicon {
-        margin-top: 10px;
-        display: inline-block !important;
-        float: right;
-        cursor:pointer;
-        color: rgba(0,0,58,255);
-    }
-
-    .navmenuicon:hover {
-        color:lightgray;
-        
-    }
-
-    .mobi {
-        display: inline-block;
-    }
-
-    #secNav {
-        background-color: rgba(255,33,75,255);
-        width: 100%;
-    }
-
-    #cadre {
-        color: lightgray;
-    }
-    #sidemenuwrapper {
-        height:190px;
-        background-color: rgba(255,33,75,255);
-        padding-top:85px;
-        position:fixed;
-        width:100%;
-        z-index:1;
-        display:none
-    }
-}
-
-@media (min-width: 768px) {
-    .navmenuicon, .mobi, #sidemenuwrapper {
-        display: none !important;
-    }
-}
-
-@media (max-width: 1300px) {
-    #headerwrapper {
-        background-size: initial;
-    }
-
-    #scroll:hover {
-        color: darkgray;
-    }
-}
