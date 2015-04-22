@@ -19,37 +19,6 @@
 
 /*#region Layout styles */
 
-
-/*Corporate colors and font*/
-.green {
-    color: rgba(31,145,9,243);
-}
-
-.red {
-    color: rgba(255,33,75,255);
-}
-
-.blue {
-    color: rgba(0,0,58,255);
-    transition: ease 1s;
-}
-
-.tblue {
-    background-color: rgba(0,0,58,255);
-    color: rgba(0,0,58,255);
-    transition: ease 1s;
-}
-
-.tgray {
-    color: lightgray;
-    transition: ease 1s;
-}
-
-.tred {
-    background-color: rgba(255,33,75,255);
-    transition: ease 1s;
-}
-
 .transparent {
     background-color: transparent;
     transition: ease 1s;
@@ -172,3 +141,36 @@ body {
 
 /*#endregion */
 
+/*#region CORPORATE COLORS */
+
+/*Corporate colors and font*/
+.green {
+    color: rgba(31,145,9,243);
+}
+
+.red {
+    color: rgba(255,33,75,255);
+}
+
+.blue {
+    color: rgba(0,0,58,255);
+    transition: ease 1s;
+}
+
+.tblue {
+    background-color: rgba(0,0,58,255);
+    color: rgba(0,0,58,255);
+    transition: ease 1s;
+}
+
+.tgray {
+    color: lightgray;
+    transition: ease 1s;
+}
+
+.tred {
+    background-color: rgba(255,33,75,255);
+    transition: ease 1s;
+}
+
+/*#endregion */ 
