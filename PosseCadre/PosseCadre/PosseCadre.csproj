@@ -146,12 +146,14 @@
     <Content Include="Resources\image13.png" />
     <Content Include="Resources\image14.png" />
     <Content Include="Resources\image15.png" />
+    <Content Include="Resources\img.png" />
     <Content Include="Resources\logoG.png" />
     <Content Include="Resources\logoGr.png" />
     <Content Include="Resources\logoGrS.png" />
     <Content Include="Resources\logoGS.png" />
     <Content Include="Resources\logoR.png" />
     <Content Include="Resources\logoRS.png" />
+    <Content Include="Resources\myImage.png" />
     <Content Include="Resources\Overcast-sky.jpg" />
     <Content Include="Resources\p2.png" />
     <Content Include="Resources\state-diagram.png" />
@@ -180,7 +182,9 @@
     <Content Include="Scripts\script\nivo-lightbox.min.js" />
     <Content Include="Scripts\script\owl.carousel.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

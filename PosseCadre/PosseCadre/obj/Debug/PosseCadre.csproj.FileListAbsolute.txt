@@ -47,6 +47,6 @@ C:\Users\papa.bengu\Documents\GitHub\possecadreapp\PosseCadre\PosseCadre\bin\Sys
 C:\Users\papa.bengu\Documents\GitHub\possecadreapp\PosseCadre\PosseCadre\bin\System.Web.WebPages.Razor.xml
 C:\Users\papa.bengu\Documents\GitHub\possecadreapp\PosseCadre\PosseCadre\bin\Antlr3.Runtime.pdb
 C:\Users\papa.bengu\Documents\GitHub\possecadreapp\PosseCadre\PosseCadre\bin\Newtonsoft.Json.xml
+C:\Users\papa.bengu\Documents\GitHub\possecadreapp\PosseCadre\PosseCadre\obj\Debug\PosseCadre.csprojResolveAssemblyReference.cache
 C:\Users\papa.bengu\Documents\GitHub\possecadreapp\PosseCadre\PosseCadre\obj\Debug\PosseCadre.dll
 C:\Users\papa.bengu\Documents\GitHub\possecadreapp\PosseCadre\PosseCadre\obj\Debug\PosseCadre.pdb
-C:\Users\papa.bengu\Documents\GitHub\possecadreapp\PosseCadre\PosseCadre\obj\Debug\PosseCadre.csprojResolveAssemblyReference.cache
