@@ -1,5 +1,82 @@
 ﻿.serviceMainContainer{
     height:100%;
     width:100%;
-    background-color:white
+    background-color:lightgray
+}
+#secHead {
+    text-align:center;
+    padding-top:15px;
+    font-family:Batang;
+    font-weight:bold;
+    font-size:60px;
+    color:rgba(255,33,75,255);
+    text-indent:2px;
+    text-shadow:1px 12px 2px rgba(0,0,0,0.10);
+}
+.servicesFeatureBox {
+    height:350px;
+    display:none;
+    padding:5px;
+    font-family:Arial;
+
+}
+
+.FeatureBox{
+    height:100%;
+    width:100%;
+    background-color:darkgray;
+}
+
+.FeatureBoxHeader{
+    text-align:center;
+    background-color:rgba(0,0,0,0.25);
+    font-size:20px;
+    padding:4px;
+    font-family:Arial;
+    height:10%
+}
+.FeatureBoxBody {
+    height:75%;
+    padding:10px;
+    text-align:center;
+}
+.FeatureBoxFooter {
+    height:15%;
+}
+.FeatureBox:hover {
+    background-color:rgba(255,33,75,255) !important;
+    color:lightgray;
+    
+}
+.quoteFooter{
+    visibility:hidden;
+    text-align:right;
+    font-size:24px;
+    padding:10px;
+    font-weight:bold;
+}
+.FeatureBox:hover .quoteFooter{
+   visibility:visible;
+}
+.FeatureBox:hover .cText{
+   display:block;
+}
+.FeatureBox:hover .dText{
+   display:none;
+}
+.FeatureBoxHeaderIcon{
+    width:100px; 
+    height:100px; 
+    border-radius:99px; 
+    background-color:rgba(0,0,0,0.25);
+    margin:0px auto;
+    font-size:30px;
+    padding-top:30px
+}
+
+.cText {
+
+    text-align:left; 
+    padding-top:10px; 
+    display:none
 }

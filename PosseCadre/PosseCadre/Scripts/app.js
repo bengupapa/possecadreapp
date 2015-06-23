@@ -9,7 +9,7 @@ $(function () {
 
     innerHtml_1 = "We engage with clients throughout the project development life-cycle to provide an application tailored to business requirements.We specialize in automating business processes, including employee leave management, corporate travel, facility & material management, accounting & reporting. We build Enterprice Resource Planning (ERP) systems tailored to your business. We provide accounting system integration, including SAP and Xero."
     innerHtml_2 = "While websites give you online presence, web applications enable you to conduct your business online. Through our web applications service we provide products such as discussion forums/blogs, e-commerce sites, communications apps, files sharing systems, online booking systems and much more. All you have to do is to get in touch with us."
-    innerHtml_3 = "The world has really gone digital. Your online presence is indeed crucial for you to be easily found by fans, ordinary people, potential employer, contractors, business partners, potential employees, clients and many more. Websites help extend you reach, and potentially increase your customer base. We offer all sorts of websites. Anything from static personal website to dynamic database-driven web 2.0 corporate website. Every natural and jusritic person can have a website. Let us make one for you."
+    innerHtml_3 = "The world has really gone digital. Your online presence is indeed crucial for you to be easily found by fans, ordinary people, potential employer, contractors, business partners, potential employees, clients and many more. Websites help extend you reach, and potentially increase your customer base. We offer all sorts of websites. Anything from static personal website to dynamic database-driven web 2.0 corporate website. Let us make one for you."
     innerHtml_4 = "Mobile application We engage with clients throughout the project development life-cycle to provide an application tailored to business requirements.We specialize in automating business processes, including employee leave management, corporate travel, facility &"
     innerHtml_5 = "informationsystem consulting We engage with clients throughout the project development life-cycle to provide an application tailored to business requirements.We specialize in automating business processes, including employee leave management, corporate travel, facility &"
     innerHtml_6 = "Ad-hoc applications We engage with clients throughout the project development life-cycle to provide an application tailored to business requirements.We specialize in automating business processes, including employee leave management, corporate travel, facility &"
@@ -91,7 +91,12 @@ $(function () {
         carousel.trigger('owl.goTo', 3);
     });
 
-
+    $('#fbBody1').html(innerHtml_1);
+    $('#fbBody2').html(innerHtml_2);
+    $('#fbBody3').html(innerHtml_3);
+    $('#fbBody4').html(innerHtml_5);
+    $('#fbBody5').html(innerHtml_4);
+    $('#fbBody6').html(innerHtml_6);
 });
 
 $('.navmenuicon').click(function () {
@@ -117,7 +122,8 @@ $('#scroll').click(function () {
 
     $('#about').ScrollTo({
         duration: 2000,
-        easing: 'linear'
+        easing: 'linear',
+        callback: onaboutcallback
     });
 
 
@@ -166,6 +172,7 @@ $(document).scroll(function () {
 
     }
 
+
 });
 
 
@@ -176,9 +183,15 @@ $(document).on('click', '.onabout', null, function () {
     $('#sidemenuwrapper').slideToggle();
     $('#about').ScrollTo({
         duration: 2000,
-        easing: 'linear'
+        easing: 'linear',
+        callback: onaboutcallback
     });
 });
+function onaboutcallback() {
+
+    $('#aboutSecSlider').css({ "display": "block" });
+    $('#aboutSecText').css({ "display": "block" });
+};
 
 $(document).on('click', '.onservices', null, function () {
 
@@ -186,10 +199,17 @@ $(document).on('click', '.onservices', null, function () {
     $('#services').ScrollTo({
         duration: 2000,
         easing: 'linear',
+        callback: onservicescallback
 
     });
 
 });
+function onservicescallback() {
+
+    $('.topLeft').css({ "display": "block" });
+    $('.topRight').css({ "display": "block" });
+    $('.upBox').css({ "display": "block" });
+};
 
 $(document).on('click', '.oncontact', null, function () {
 

@@ -116,6 +116,7 @@ body {
 
 .seccontainor {
     padding-top: 80px;
+    height:100%
 }
 
 .fa-chevron-up {
@@ -123,7 +124,8 @@ body {
 }
 
 .secwrapper {
-    height: 100vh;
+    /*height: 120vh;*/
+    min-height:100vh;
     /*background-color: ghostwhite !important;*/
 }
 

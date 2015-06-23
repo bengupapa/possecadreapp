@@ -139,14 +139,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Resources\image1.png" />
-    <Content Include="Resources\image10.png" />
-    <Content Include="Resources\image11.png" />
-    <Content Include="Resources\image12.png" />
-    <Content Include="Resources\image13.png" />
-    <Content Include="Resources\image14.png" />
     <Content Include="Resources\image15.png" />
-    <Content Include="Resources\img.png" />
     <Content Include="Resources\logoG.png" />
     <Content Include="Resources\logoGr.png" />
     <Content Include="Resources\logoGrS.png" />
@@ -156,7 +149,6 @@
     <Content Include="Resources\myImage.png" />
     <Content Include="Resources\Overcast-sky.jpg" />
     <Content Include="Resources\p2.png" />
-    <Content Include="Resources\state-diagram.png" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
